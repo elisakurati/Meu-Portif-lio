@@ -1,0 +1,141 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background: linear-gradient(to bottom, #0f0f23, #24243e);
+}
+
+header {
+    background: rgba(15, 15, 35, 0.9);
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar a:hover {
+    color: #fff;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    box-shadow: 0 4px 15px rgba(101, 89, 255, 0.75);
+}
+
+main {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: rgba(36, 36, 62, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+main h1, main h2 {
+    color: #a29bfe;
+    border-bottom: 2px solid #6c5ce7;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.photo-container img {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px;
+    border-radius: 50%; /* Deixa a foto redonda */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.photo-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(101, 89, 255, 0.75);
+}
+
+
+footer {
+    background: #0f0f23;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Botões */
+button {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(101, 89, 255, 0.75);
+}
+
+/* Animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adicionando Responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
